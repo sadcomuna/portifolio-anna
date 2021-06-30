@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif !important;
+  height: 100vh;
+  background-color: linear-gradient(to top,#c48562, #916349);
+
+}
+
+.img-social{
+
+  width: 2rem;
+  height: auto;
+}
+
+.img-info{
+
+  width: 2rem;
+  height: auto;
+}
+
+.img-fluid{
+
+  width: 2rem;
+  height: auto;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+  body {
+
+  overflow: auto;
+  height: auto;
+  background-size: cover;
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { } 
+
