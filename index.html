@@ -5,30 +5,25 @@
 
   <meta charset="UTF-8">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> PW 29.06 </title>
+  <title> Portifólio Da Anna </title>
 
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href"css/estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="shortcut icon" href="img/fotooo.png" type="image/x-icon"> 
-  
+  <link rel="stylesheet" href="libs/fontawesome/css/all.css">
 
 </head>
+
 <body>
   
   <div class="jumbotron jumbotron-fuid bg-transparent">
 
-    <h1 class="display-4"></h1>
-
-    <p class="lead">  </p>
-    <hr class="my-4">
-    <p>  </p>
-  </div>
-
   <div class="container">
-    <div class="row justify-content">
-      <div class="col-12 col-sm-3 col-md-2">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4 col-md-5 text-center">
         <img class="img-fluid" src="fotooo.jpg" alt="anna">
 
         <h4 class="text-black text-center mt-2 mt-sm-4 md-5">Anna Laura Amorim Silva </h4>
@@ -41,11 +36,11 @@
         
       </div>
 
-      <div class="col-12 col-sm-8 offset-md-1 col-md-6"></div>
+      <div class="col-12 col-sm-8 offset-md-1 col-md-6 mt-0 mt-sm-1 mt-md-5"></div>
 
       <img class="img-info ml-3 mr-3" src="information.png" alt="info"> 
       
-      <h3 class=" text-black mt-0 mt-sm-2 mt-md-5 d-none d-sm-block">Sobre o trabalho de Anna Laura </h3>
+      <h3 class=" text-black mt-0 mt-sm-2 mt-md-5 d-none d-sm-block"> <i class="fas fa-info-circle"></i> Sobre o trabalho de Anna Laura </h3>
 
       <p class="text-black text-justify mt-2 mt-sm-1 mt-md-1 ">
 
@@ -55,22 +50,39 @@
 
       <div class="container-fluid mt-2 mt-sm-3 mt-md-5">
         <div class="row">
-          <div class="col-12 col-sm-4 col-md-4">
+          
+          <div class="col-4 col-sm-4 col-md-4">
 
-            <img class="img-fluid mt-2 mb-sm-3 mt-md-4" src="call.png" alt="contato">
-            <h4 class="text-black text-center"> Contato </h4>
+            <a href="contatos">
+              
+              <img class="img-fluid mb-2 mb-sm-3 mb-md-4" src="call.png" alt="Fale Conosco">
+              <h4 class="text-black text-center">Fale Conosco</h4>
+
+            </a>
 
           </div>
-           <div class="col-12 col-sm-4 col-md-4">
 
-            <img class="img-fluid mt-2 mb-sm-3 mt-md-4" src="start-up.png" alt="projetos">
-            <h4 class="text-black text-center"> Projetos </h4>
+           <div class="col-4 col-sm-4 col-md-4">
             
-          </div>
-           <div class="col-12 col-sm-4 col-md-4">
+            <a href="projetos">
+              
+              <img class="img-fluid mb-2 mb-sm-3 mb-md-4" src="start-up.png" alt="Projetos">
+              <h4 class="text-black text-center"> Projetos </h4>
+            
+            </a>
 
-            <img class="img-fluid mt-2 mb-sm-3 mt-md-4" src="customer.png" alt="cliente">
-            <h4 class="text-black text-center"> Parceiros </h4>
+           </div>
+
+            <div class="col-4 col-sm-4 col-md-4">
+              
+              <a href="parceiros">
+
+              <img class="img-fluid mb-2 mb-sm-3 mb-md-4" src="customer.png" alt="Parceiros">
+              <h4 class="text-white text-center"> Parceiros </h4>
+
+              </a>
+
+            </div>
             
           </div>
         </div>
@@ -85,12 +97,47 @@
                 <p class="text-black text-center">
                     Todos os direitos reservados. 
                 </p>
+            </div>
+        </div>
+   </div>
+
+
+  <div class="modal fade" id="modal-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+    <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        
+        <h5 class="modal-title">Título do modal</h5>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          
+          <span aria-hidden="true">&times;</span>
+        
+        </button>
+      
+    </div>
+      
+  <div class="modal-body">
+        ...
+      
   </div>
+      
+  <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <script src="js/jquery-3.6.0.js"> </script>
   <script src="js/bootstrap.js"> </script>
-
+  <script src="js/load-page.js"> </script>
 
 </body>
 </html>

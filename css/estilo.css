@@ -6,27 +6,38 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif !important;
-  height: 100vh;
-  background-color: linear-gradient(to top,#c48562, #916349);
+  background: linear-gradient(to bottom,#916349,#c48562);
+  height: 300vh;
 
 }
 
 .img-social{
 
-  width: 2rem;
+  width: 4rem;
   height: auto;
 }
 
 .img-info{
 
-  width: 2rem;
+  width: 3rem;
   height: auto;
 }
 
-.img-fluid{
+.font {
 
-  width: 2rem;
-  height: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.font2{
+
+  font-size: xx-large;
+
+}
+
+.font3{
+
+  font-size: xx-large;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
