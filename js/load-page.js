@@ -1,41 +1,51 @@
-$(document).ready(function()
+$(document).ready(function(){ 
+ 
+  $('a').click(function(e){
+    e.preventDefault()
 
-$('a').click(function(e)
-{
+    let pagina = $(this).attr('href')
 
-  e.preventDefault()
+    $('.modal-title').empty() 
 
-  let page = $(this).attr('href')
-
-  $('.modal-title').empty()
-  $('.moday-body').empty()
+    $('.modal-body').empty() 
 
 
-switch(page){
+    switch(pagina){
 
-  case 'projetos':
-  $('.modal-title').append('Projetos')
-  $('.modal-body').append('Alguns dos meus projetos')
+      case 'projetos': 
+        $('.modal-title').append('Projetos') 
+        $('.modal-body').append(`
+          <div class="container">
+            <div class="row">
+            <div class="col-12 col-sm-4 col-md-4">
+            <img src="img/projetos.jpeg" alt="Projetos" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-8 col-md-8">
+            <h4 class="text-center text-danger">Projetos</h4>
+            <p>Aqui estão alguns dos meus projetos:</p>
+          </div>
+          </div>
+          </div>
+        `) 
+        break
 
-  break
+      case 'parceiros':
 
-  case 'parceiros':
-  $('.modal-title').append('Parceiros')
-  $('.modal-body').append('Alguns dos meus parceiros')
+        $('.modal-title').append('Parceiros') 
+        $('.modal-body').append('<p> Aqui são alguns dos meus parceiros:</p>') 
+        break
 
-  break
+      case 'contatos':
 
-  case 'parceiros':
-  $('.modal-title').append('Contatos')
-  $('.modal-body').append('Alguns dos meus contatos')
+        $('.modal-title').append('Contatos') 
+        $('.modal-body').append('<p>Aqui estão alguns dos meus contatos:</p>') 
+        break
 
-  break
+      default: alert('Página não encontrada')
+      
+    }
 
-  default: alert('Pagina não encontrada')
-}
+    $('#modal-info').modal('show')
 
-$('#modal-info').modal('show')
-
-})
-
+  })
 })

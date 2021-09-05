@@ -1,65 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 
 body {
-
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-family: 'Open Sans', sans-serif !important;
-  background: linear-gradient(to bottom,#916349,#c48562);
-  height: 300vh;
-
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Dosis', sans-serif !important;
+    background: linear-gradient(to bottom, #574b90, #778beb);
+    height: 100vh;
 }
 
-.img-social{
-
-  width: 4rem;
-  height: auto;
+.img-social {
+    width: 5rem;
+    height: auto;
 }
 
-.img-info{
 
-  width: 3rem;
-  height: auto;
+@media (max-width: 575.98px) {
+    body {
+        overflow: auto;
+        height: auto;
+        background-size: cover;
+    }
 }
 
-.font {
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
 
-}
+@media (max-width: 767.98px) {}
 
-.font2{
 
-  font-size: xx-large;
 
-}
+@media (max-width: 991.98px) {}
 
-.font3{
 
-  font-size: xx-large;
-}
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-
-  body {
-
-  overflow: auto;
-  height: auto;
-  background-size: cover;
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { } 
-
+@media (max-width: 1199.98px) {}
